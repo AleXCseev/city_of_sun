@@ -1,0 +1,83 @@
+.header {
+  width: 100%;
+}
+
+h1 {
+  font-family: "vTypographyofCoop-Heavy";
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  color: red;
+}
+
+.header-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.background {
+  width: 300px;
+  height: 45px;
+  background-color: #faf5d1;
+  border-radius: 40px;
+}
+
+.header-paragraf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "vTypographyofCoop-Heavy";
+  color: #906f6f;
+  font-size: 36px;
+}
+
+.header-adress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 65px;
+  height: 65px;
+  margin: 20px;
+}
+
+.header-logo__background {
+  width: 1060px;
+  height: 780px;
+  background-color: #dbeeef;
+  border-radius: 1060px / 780px;
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  background: url("./img/rays.png") no-repeat;
+  width: 860px;
+  height: 670px;
+  margin-bottom: -7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.site-title {
+  color: #746c1d;
+  font-family: "Pudelinka";
+  font-size: 75px;
+  font-weight: normal;
+}
+
+.site-subtitle {
+  color: #44a3a4;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px
+}
