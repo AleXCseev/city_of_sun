@@ -1,5 +1,7 @@
 .header {
   width: 100%;
+  background: url("../img/background.png");
+  background-size: contain;
 }
 
 h1 {
@@ -18,7 +20,7 @@ h1 {
 }
 
 .background {
-  width: 300px;
+  width: 320px;
   height: 45px;
   background-color: #faf5d1;
   border-radius: 40px;
@@ -55,6 +57,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 200px;
 }
 
 .logo {
@@ -79,5 +82,5 @@ h1 {
   color: #44a3a4;
   font-size: 30px;
   text-align: center;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }

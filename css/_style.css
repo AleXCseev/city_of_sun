@@ -1,6 +1,7 @@
 @import "animate.css";
 @import "font.css";
 @import "header.css";
+@import "main.css";
 
 *, *:after, *:before {
   margin: 0;
@@ -9,8 +10,6 @@
 }
 
 body {
-  background: url("../img/background.png");
-  background-size: contain;
   font-family: "vTypographyofCoop-Heavy";
 }
 
