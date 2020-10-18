@@ -104,7 +104,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./css/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ../css/_style.css */ \"./css/_style.css\")\r\n\r\nwindow.addEventListener(\"DOMContentLoaded\", () => {\r\n  console.log(\"Hello world!!!\");\r\n  \r\n});\r\n\n\n//# sourceURL=webpack:///./js/_script.js?");
+eval("__webpack_require__(/*! ../css/_style.css */ \"./css/_style.css\");\r\n\r\n\n\n//# sourceURL=webpack:///./js/_script.js?");
 
 /***/ }),
 
