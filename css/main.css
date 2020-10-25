@@ -182,11 +182,11 @@
   background: #dbeeef url("./img/main_bg_info.png") no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 2000px;
+  height: 2200px;
 }
 
 .info__child {
-  padding-top: 720px;
+  padding-top: 800px;
   width: 90%;
   margin: 0 auto;
   /* justify-content: center; */
@@ -241,25 +241,27 @@
 
 .info__registration {
   width: 100%;
-  height: 400px;
+  height: 600px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  background: url("./img/button.png") no-repeat left 10% bottom 50%;
-  margin-top: 100px;
+  background: url("./img/button.png") no-repeat center center;
+  margin-top: 30px;
 }
 
 .info__registration-button {
   color: #349ba2;
   background: none;
   border: none;
-  margin-top: 120px;
-  margin-bottom: 30px;
+  text-decoration: none;
+  margin-bottom: 40px;
+  text-align: center;
   height: 80px;
   width: 850px;
   font-family: inherit;
   font-size: 60px;
+  cursor: pointer;
 }
 
 .info__recall {
@@ -276,7 +278,7 @@
 }
 
 .info__social {
-  margin-top: 60px;
+  margin-top: 100px;
   width: 50%;
   height: auto;
   display: flex;
