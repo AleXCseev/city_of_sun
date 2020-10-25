@@ -2519,6 +2519,119 @@
   font-style: normal;
 }
 
+.modal__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(24, 114, 112, 0.8);
+  z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.modal__background {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  padding: 200px 320px 300px 260px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("./img/longsheet.png") no-repeat center center;
+  background-size: contain;
+  color: #28807e;
+}
+
+.modal__background-low {
+  background: url("./img/sheet.png") no-repeat center center;
+  background-size: contain;
+}
+
+.modal__title {
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+.modal__paragraff {
+  font-size: 28px;
+  text-indent: 40px;
+  margin-bottom: 30px;
+}
+
+.modal__list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.modal__list-item {
+  font-size: 28px;
+  word-wrap: wrap;
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal__list-item:before {
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  content: "* ";
+  font-family: "Pudelinka";
+  font-size: 50px;
+  color: #7d7021;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #28807e;
+  font-family: inherit;
+  margin-top: 20px;
+  border: 1px solid #28807e;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.modal__registration {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.registration__button {
+  display: block;
+  border: none;
+  background: url("./img/button.png") no-repeat center center;
+  background-size: cover;
+  background-position: left 65% top 25px;
+  cursor: pointer;
+  font-size: 36px;
+  color: #28807e;
+  font-family: inherit;
+  width: 100%;
+  height: 300px;
+}
+
+.notmargin {
+  margin-bottom: 0px;
+}
+
+.modal-close {
+  display: none;
+}
+
 .header {
   width: 100%;
   background: url("../img/background.png");
@@ -2567,6 +2680,11 @@ h1 {
   width: 65px;
   height: 65px;
   margin: 20px;
+  transition: 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.2)
 }
 
 .header-logo__background {
@@ -2608,6 +2726,7 @@ h1 {
 
 .main {
   display: block;
+  position: relative;
 }
 
 .main-background__line {
@@ -2644,6 +2763,7 @@ h1 {
 }
 
 .info__item {
+  position: reletive;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2652,6 +2772,11 @@ h1 {
   cursor: pointer;
   width: 300px;
   height: 300px;
+  transition: 0.3s ease;
+}
+
+.info__item:hover {
+  margin-top: -30px;
 }
 
 .info__icon {
@@ -2778,6 +2903,7 @@ h1 {
 }
 
 .info {
+  position: relative;
   margin-top: -450px;
   background: #dbeeef url("./img/main_bg_info.png") no-repeat center center;
   background-size: cover;
@@ -2805,6 +2931,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 
 .info__child-bg {
@@ -2822,6 +2949,13 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 10px;
+  transition: 0.3s ease;
+}
+
+.info__child-item:hover .info__child-icon{
+  left: 0;
+  width: 260px;
+  height: 260px;
 }
 
 .info__title-child {
@@ -2831,6 +2965,60 @@ h1 {
   color: #28807e;
 }
 
+.info__registration {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: url("./img/button.png") no-repeat left 10% bottom 50%;
+  margin-top: 100px;
+}
+
+.info__registration-button {
+  color: #349ba2;
+  background: none;
+  border: none;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  height: 80px;
+  width: 850px;
+  font-family: inherit;
+  font-size: 60px;
+}
+
+.info__recall {
+  color: #349ba2;
+  font-size: 48px;
+}
+
+.info__map {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+}
+
+.info__social {
+  margin-top: 60px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social {
+  transition: 0.3s ease;
+}
+
+.social:hover {
+  transform: scale(1.2);
+}
+
+
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -2838,6 +3026,7 @@ h1 {
 }
 
 body {
+  position: relative;
   font-family: "vTypographyofCoop-Heavy";
 }
 

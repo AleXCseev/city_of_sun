@@ -1,5 +1,7 @@
+
 @import "animate.css";
 @import "font.css";
+@import "modal.css";
 @import "header.css";
 @import "main.css";
 
@@ -10,6 +12,7 @@
 }
 
 body {
+  position: relative;
   font-family: "vTypographyofCoop-Heavy";
 }
 

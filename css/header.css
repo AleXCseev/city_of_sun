@@ -46,6 +46,11 @@ h1 {
   width: 65px;
   height: 65px;
   margin: 20px;
+  transition: 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.2)
 }
 
 .header-logo__background {
