@@ -1,43 +1,52 @@
 .modal__item {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
+  right: 0;
   background-color: rgba(24, 114, 112, 0.8);
   z-index: 100000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: all 1s ease;
+  overflow: auto;
 }
 
 .modal__background {
-  width: 90%;
-  height: 100%;
-  display: flex;
-  padding: 200px 320px 300px 260px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: url("./img/longsheet.png") no-repeat center center;
-  background-size: contain;
+  width: 100%;
+  height: 1800px;
+   display: flex;
+  justify-content: center; 
+  background: url("./img/longsheet.png") no-repeat;
+  background-size: 90%;
+  background-position: center 10px;
   color: #28807e;
+  padding-bottom: 50px;
+  
+}
+
+.modal__wrapper {
+  width: 60%;
+  padding-top: 300px;
+  padding-right: 70px;
+  padding-left: 20px;
 }
 
 .modal__background-low {
-  background: url("./img/sheet.png") no-repeat center center;
-  background-size: contain;
+  background: url("./img/sheet.png") no-repeat;
+  background-size: 90%;
+  background-position: center 10px;
+  width: 100%;
+  height: 1600px;
 }
 
 .modal__title {
-  font-size: 46px;
+  text-align: center;
+  font-size: 42px;
   margin-bottom: 30px;
 }
 
 .modal__paragraff {
-  font-size: 28px;
-  text-indent: 40px;
+  font-size: 24px;
+  text-indent: 30px;
   margin-bottom: 30px;
 }
 
@@ -48,12 +57,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 50px;
 }
 
 .modal__list-item {
-  font-size: 28px;
+  font-size: 24px;
   word-wrap: wrap;
   position: relative;
   margin-bottom: 10px;
@@ -64,14 +73,19 @@
   left: -30px;
   content: "* ";
   font-family: "Pudelinka";
-  font-size: 50px;
+  font-size: 42px;
   color: #7d7021;
+}
+
+.modal__close-block {
+  display: flex;
+  justify-content: center;
 }
 
 .modal__close {
   background: none;
   border: none;
-  font-size: 28px;
+  font-size: 26px;
   color: #28807e;
   font-family: inherit;
   margin-top: 20px;
