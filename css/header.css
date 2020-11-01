@@ -2,21 +2,42 @@
   width: 100%;
   background: url("../img/background.png");
   background-size: contain;
+
+  @media (max-width: 700px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    background: none;
+  }
 }
 
-h1 {
-  font-family: "vTypographyofCoop-Heavy";
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-size: 48px;
-  color: red;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  @media(max-width: 700px) {
+    flex-direction: column-reverse;
+  }  
 }
 
 .header-section {
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    padding-bottom: 180px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) {
+    padding-bottom: 20px;
+  }
+
 }
 
 .background {
@@ -24,6 +45,10 @@ h1 {
   height: 45px;
   background-color: #faf5d1;
   border-radius: 40px;
+
+  @media (max-width: 700px) {
+    width: 70%;
+  }
 }
 
 .header-paragraf {
@@ -33,6 +58,11 @@ h1 {
   font-family: "vTypographyofCoop-Heavy";
   color: #906f6f;
   font-size: 36px;
+  height: 100%;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 }
 
 .header-adress {
@@ -40,6 +70,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 700px) {
+    flex-direction: row;
+  } 
 }
 
 .header-logo {
@@ -47,10 +81,15 @@ h1 {
   height: 65px;
   margin: 20px;
   transition: 0.3s ease;
+
+  @media (max-width: 700px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .header-logo:hover {
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
 .header-logo__background {
@@ -63,10 +102,33 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-bottom: 200px;
+
+  @media (max-width: 1300px) {
+    width: 860px;
+    height: 640px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 660px;
+    height: 480px;
+    margin-top: 0px;
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 20px;
+    width: 580px;
+    height: 450px
+  }
+
+  @media (max-width: 600px) {
+    width: 95%;
+    height: 350px;
+  }
 }
 
 .logo {
-  background: url("./img/rays.png") no-repeat;
+  background: url("./img/rays.png") no-repeat center center;
+  background-size: contain;
   width: 860px;
   height: 670px;
   margin-bottom: -7%;
@@ -74,6 +136,29 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: 1300px) {
+    width: 760px;
+    height: 540px;
+    margin-bottom: -10%;
+  }
+
+  @media (max-width: 1200px) {
+    width: 560px;
+    height: 480px;
+    margin-bottom: -7%;
+  }
+
+  @media (max-width: 700px) {
+    width: 540px;
+    height: 460px;
+    margin-bottom: -6%;
+  }
+
+  @media (max-width: 600px) {
+    width: 92%;
+    height: 92%;
+  }
 }
 
 .site-title {
@@ -81,6 +166,15 @@ h1 {
   font-family: "Pudelinka";
   font-size: 75px;
   font-weight: normal;
+  text-transform: uppercase;
+
+  @media (max-width: 1300px) {
+    font-size: 65px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 45px;
+  }
 }
 
 .site-subtitle {
@@ -88,4 +182,13 @@ h1 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (max-width: 1300px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
 }
