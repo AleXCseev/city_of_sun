@@ -63,3 +63,9 @@ const modal8 = document.querySelector(".modal8")
 const close8 = modal8.querySelector(".modal__close")
 
 modals(modalbtn8, modal8, close8)
+
+const modalBtnComments = document.querySelector(".modal-btn_comments")
+const modalComments = document.querySelector(".modal_comments")
+const closeComments = modalComments.querySelector(".modal__close")
+
+modals(modalBtnComments, modalComments, closeComments)
