@@ -2,14 +2,16 @@
 html(lang="ru")
   head
     meta(charset="UTF-8")
+    meta(name="keywords" content="город солнца, детский сад, одесса")
+    meta(name="description" content="Детский сад Город Солнца")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    link(rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16")
     title Город солнца
     link(rel="stylesheet" href="/style.css")
     body
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v8.0" nonce="gFOp0FKI"></script>
+      div#fb-root
+      script(async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v8.0" nonce="gFOp0FKI")
       include header.pug
       include main.pug
       

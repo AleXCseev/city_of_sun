@@ -362,6 +362,7 @@
 
   @media (max-width: 500px) {
     align-self: flex-start;
+    padding-right: 10px;
   }
 }
 
@@ -390,7 +391,7 @@
   @media (max-width: 500px) {
     align-self: flex-end;
     background-position: 30px center !important;
-    padding-left: 30px;
+    padding-left: 70px;
   }
 }
 
@@ -442,7 +443,7 @@
   @media (max-width: 500px) {
     align-self: flex-end;
     background-position: 30px center !important;
-    padding-left: 30px !important;
+    padding-left: 70px;
   }
 }
 

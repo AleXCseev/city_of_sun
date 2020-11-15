@@ -1,11 +1,12 @@
-
 @import "animate.css";
 @import "font.css";
 @import "modal.css";
 @import "header.css";
 @import "main.css";
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,15 +14,11 @@
 
 body {
   font-family: "vTypographyofCoop-Heavy";
-
-  
 }
 
 @media (max-width: 600px) {
   body {
-    background: url("../img/background.png");
+    background: url("../img/background.jpeg");
     background-size: contain;
   }
 }
-
-
