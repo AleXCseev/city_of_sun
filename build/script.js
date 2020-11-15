@@ -479,7 +479,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\Константин\\Desktop\\Город Солнца\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:4000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:4000\");\nmodule.exports = __webpack_require__(/*! ./js/_script.js */\"./js/_script.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
+eval("__webpack_require__(/*! /Users/konstantinalekseev/Desktop/city_of_sun/node_modules/webpack-dev-server/client/index.js?http://localhost:4000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:4000\");\nmodule.exports = __webpack_require__(/*! ./js/_script.js */\"./js/_script.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
 
 /***/ })
 

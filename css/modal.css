@@ -1,224 +1,226 @@
 .modal__item {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(24, 114, 112, 0.8);
-  z-index: 100000;
-  transition: all 1s ease;
-  overflow: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(24, 114, 112, 0.8);
+	z-index: 100000;
+	transition: all 1s ease;
+	overflow: auto;
 }
 
 .modal__background {
-  width: 100%;
-  height: 1800px;
-  display: flex;
-  justify-content: center;
-  background: url("./img/longsheet.png") no-repeat;
-  background-size: 90%;
-  background-position: center 10px;
-  color: #28807e;
-  padding-bottom: 50px;
+	width: 100%;
+	height: 1800px;
+	display: flex;
+	justify-content: center;
+	background: url("./img/longsheet.png") no-repeat;
+	background-size: 90%;
+	background-position: center 10px;
+	color: #28807e;
+	padding-bottom: 50px;
 
-  @media (max-width: 1050px) {
+	@media (max-width: 1050px) {
+		/* background: url("./img/list-mobile.png") no-repeat center;
+    background-size: contain; */
     background: none;
-    background-color: #daeeef;
-    width: 90%;
-    margin: 50px auto;
-    height: auto;
-    border-radius: 100px;
-  }
+		background-color: #daeeef;
+		width: 90%;
+		margin: 50px auto;
+		height: auto;
+		border-radius: 100px;
+	}
 
-  @media (max-width: 600px) {
-    border-radius: 50px;
-  }
+	@media (max-width: 600px) {
+		border-radius: 50px;
+	}
 }
 
 .modal__wrapper {
-  width: 60%;
-  padding-top: 300px;
-  padding-right: 70px;
-  padding-left: 20px;
+	width: 60%;
+	padding-top: 300px;
+	padding-right: 70px;
+	padding-left: 20px;
 
-  @media (max-width: 1200px) {
-    padding-top: 200px;
-    padding-right: 100px;
-  }
+	@media (max-width: 1200px) {
+		padding-top: 200px;
+		padding-right: 100px;
+	}
 
-  @media (max-width: 1050px) {
-    width: 100%;
-    padding: 100px 30px 50px 30px;
-  }
+	@media (max-width: 1050px) {
+		width: 100%;
+		padding: 100px 30px 50px 30px;
+	}
 
-  @media (max-width: 600px) {
-    padding: 30px 10px 20px 20px;
-  }
+	@media (max-width: 600px) {
+		padding: 30px 10px 20px 20px;
+	}
 }
 
 .modal__background-low {
-  background: url("./img/sheet.png") no-repeat;
-  background-size: 90%;
-  background-position: center 10px;
-  width: 100%;
-  height: 1600px;
+	background: url("./img/sheet.png") no-repeat;
+	background-size: 90%;
+	background-position: center 10px;
+	width: 100%;
+	height: 1600px;
 
-  @media (max-width: 1050px) {
-    background: none;
-    background-color: #daeeef;
-    width: 90%;
-    margin: 50px auto;
-    height: auto;
-    border-radius: 100px;
-  }
+	@media (max-width: 1050px) {
+		background: none;
+		background-color: #daeeef;
+		width: 90%;
+		margin: 50px auto;
+		height: auto;
+		border-radius: 100px;
+	}
 
-  @media (max-width: 600px) {
-    border-radius: 50px;
-  }
+	@media (max-width: 600px) {
+		border-radius: 50px;
+	}
 }
 
 .modal__title {
-  text-align: center;
-  font-size: 42px;
-  margin-bottom: 30px;
+	text-align: center;
+	font-size: 42px;
+	margin-bottom: 30px;
 
-  @media (max-width: 1200px) {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
+	@media (max-width: 1200px) {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
 
-  @media (max-width: 414px) {
-    font-size: 28px;
-  }
+	@media (max-width: 414px) {
+		font-size: 28px;
+	}
 }
 
 .modal__paragraff {
-  font-size: 24px;
-  text-indent: 30px;
-  margin-bottom: 30px;
+	font-size: 24px;
+	text-indent: 30px;
+	margin-bottom: 30px;
 
-  @media (max-width: 1200px) {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
+	@media (max-width: 1200px) {
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
 
-  @media (max-width: 414px) {
-    text-indent: 20px;
-  }
+	@media (max-width: 414px) {
+		text-indent: 20px;
+	}
 }
 
 .modal__list {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  padding-left: 50px;
+	list-style: none;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	padding-left: 50px;
 
-  @media (max-width: 414px) {
-    padding-left: 40px;
-  }
+	@media (max-width: 414px) {
+		padding-left: 40px;
+	}
 }
 
 .modal__list-item {
-  font-size: 24px;
-  word-wrap: wrap;
-  position: relative;
-  margin-bottom: 10px;
+	font-size: 24px;
+	word-wrap: wrap;
+	position: relative;
+	margin-bottom: 10px;
 
-  @media (max-width: 1200px) {
-    font-size: 20px;
-  }
+	@media (max-width: 1200px) {
+		font-size: 20px;
+	}
 }
 
 .modal__list-item:before {
-  position: absolute;
-  top: -10px;
-  left: -30px;
-  content: "* ";
-  font-family: "Pudelinka";
-  font-size: 42px;
-  color: #7d7021;
+	position: absolute;
+	top: -10px;
+	left: -30px;
+	content: "* ";
+	font-family: "Pudelinka";
+	font-size: 42px;
+	color: #7d7021;
 }
 
 .modal__close-block {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .modal__close {
-  background: none;
-  border: none;
-  font-size: 26px;
-  color: #28807e;
-  font-family: inherit;
-  margin-top: 20px;
-  border: 1px solid #28807e;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 26px;
+	color: #28807e;
+	font-family: inherit;
+	margin-top: 20px;
+	border: 1px solid #28807e;
+	padding: 10px 20px;
+	border-radius: 20px;
+	cursor: pointer;
 
-  @media (max-width: 1200px) {
-    font-size: 22px;
-    padding: 10px 15px;
-  }
+	@media (max-width: 1200px) {
+		font-size: 22px;
+		padding: 10px 15px;
+	}
 }
 
 .modal__registration {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
 
-  @media (max-width: 900px) {
-    height: 200px;
-  }
+	@media (max-width: 900px) {
+		height: 200px;
+	}
 }
 
 .registration__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  border: none;
-  background: url("./img/button.png") no-repeat center center;
-  background-size: cover;
-  cursor: pointer;
-  font-size: 36px;
-  color: #28807e;
-  font-family: inherit;
-  width: 100%;
-  height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border: none;
+	background: url("./img/button.png") no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+	font-size: 36px;
+	color: #28807e;
+	font-family: inherit;
+	width: 100%;
+	height: 300px;
 
-  @media (max-width: 900px) {
-    background: none;
-    margin: 0 20px;
-    background-color: #fdfcbd;
-    height: 60px;
-    border-radius: 60px;
-  }
+	@media (max-width: 900px) {
+		background: none;
+		margin: 0 20px;
+		background-color: #fdfcbd;
+		height: 60px;
+		border-radius: 60px;
+	}
 
-  @media (max-width: 500px) {
-    font-size: 28px;
-    height: 50px;
-    margin: 0 10px;
-  }
+	@media (max-width: 500px) {
+		font-size: 28px;
+		height: 50px;
+		margin: 0 10px;
+	}
 }
 
 .fb-plagin {
-  border: 1px solid #28807e;
-  border-radius: 20px;
-  padding: 10px;
-  margin-bottom: 20px;
+	border: 1px solid #28807e;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
 }
 
 .notmargin {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .modal-close {
-  display: none;
+	display: none;
 }
