@@ -24,7 +24,7 @@
 	@media (max-width: 1050px) {
 		/* background: url("./img/list-mobile.png") no-repeat center;
     background-size: contain; */
-    background: none;
+		background: none;
 		background-color: #daeeef;
 		width: 90%;
 		margin: 50px auto;
@@ -39,9 +39,15 @@
 
 .modal__wrapper {
 	width: 60%;
-	padding-top: 300px;
-	padding-right: 70px;
-	padding-left: 20px;
+	padding-top: 500px;
+	padding-right: 150px;
+	padding-left: 40px;
+
+	@media (max-width: 1600px) {
+		padding-top: 300px;
+		padding-right: 70px;
+		padding-left: 20px;
+	}
 
 	@media (max-width: 1200px) {
 		padding-top: 200px;

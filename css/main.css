@@ -607,6 +607,7 @@
 	width: 240px;
 	height: 240px;
 	position: absolute;
+	border-radius: 50%;
 	bottom: 0;
 	left: 10px;
 	transition: 0.3s ease;
@@ -810,4 +811,21 @@
 
 .social:hover {
 	transform: scale(1.2);
+}
+
+.info__social--title {
+	margin-bottom: -40px;
+	margin-top: 10px;
+	font-size: 32px;
+	color: #90706f;
+	text-align: center;
+
+	@media (max-width: 800px) {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 414px) {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
 }
