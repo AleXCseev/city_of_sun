@@ -91,6 +91,7 @@
   color: #906f6f;
   font-size: 36px;
   height: 100%;
+  text-decoration: none;
 
   @media (max-width: 600px) {
     font-size: 18px;

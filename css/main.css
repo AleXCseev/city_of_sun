@@ -404,7 +404,7 @@
   width: 430px;
   height: 250px;
   top: 200px;
-  left: 180px;
+  left: 290px;
 
   @media (max-width: 1100px) {
     width: 340px;
@@ -592,8 +592,8 @@
 .cloud4 {
   width: 500px;
   height: 300px;
-  top: 470px;
-  right: 180px;
+  top: 500px;
+  right: 270px;
 
   @media (max-width: 1100px) {
     width: 340px;
