@@ -21,33 +21,22 @@
 
 .modal__background {
 	width: 100%;
-	height: 1800px;
+	height: 3000px;
 	display: flex;
 	justify-content: center;
 	background: url("./img/longsheet.png") no-repeat;
-	background-size: 90%;
+	background-size: 100%;
 	background-position: center 10px;
 	color: #28807e;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 
 	@media (max-width: 1050px) {
-		/* background: url("./img/list-mobile.png") no-repeat center;
-    	background-size: contain; */
 		background: none;
 		height: auto;
-		/* background-color: #daeeef; */
-		/* background: url("./img/list-bg.png") no-repeat center center;
-		background-size: cover; */
-		/* width: 90%; */
-		/* margin: 120px auto; */
-		/* height: 1000px; */
-		/* border-radius: 100px; */
 		padding: 0;
 	}
 
 	@media (max-width: 600px) {
-		/* border-radius: 50px; */
-		/* margin-top: 150px; */
 		display: flex;
 		justify-content: center;
 		alighn-items: center;
@@ -55,15 +44,15 @@
 }
 
 .modal__wrapper {
-	width: 60%;
+	width: 70%;
 	padding-top: 500px;
-	padding-right: 150px;
-	padding-left: 40px;
+	padding-right: 50px;
+	padding-left: 0px;
 
 	@media (max-width: 1600px) {
 		padding-top: 300px;
-		padding-right: 70px;
-		padding-left: 20px;
+		padding-right: 100px;
+		padding-left: 0px;
 	}
 
 	@media (max-width: 1200px) {
@@ -73,8 +62,6 @@
 
 	@media (max-width: 1050px) {
 		width: 85%;
-		/* margin-top: 70px; */
-		/* margin-bottom: 50px; */
 		padding: 0px 30px 0px 30px;
 		height: 750px;
 		overflow: auto;
@@ -82,15 +69,12 @@
 
 	@media (max-width: 414px) {
 		padding: 0px 20px 0px 20px;
-		/* margin-top: 20px; */
 		width: 75%;
 		height: 400px;
 		overflow: auto;
 	}
 
 	@media (max-width: 375px) {
-		/* margin-top: 0px; */
-		/* padding: 0px 20px 0px 20px; */
 	}
 
 	@media (max-width: 320px) {
@@ -101,29 +85,26 @@
 
 .modal__background-low {
 	background: url("./img/sheet.png") no-repeat;
-	background-size: 90%;
+	background-size: 100%;
 	background-position: center 10px;
 	width: 100%;
 	height: 1600px;
+	padding-left: 70px;
+	padding-right: 50px;
 
 	@media (max-width: 1050px) {
 		background: none;
-		/* background-color: #daeeef; */
-		/* width: 90%; */
-		/* margin: 50px auto; */
 		height: auto;
-		/* border-radius: 100px; */
 		padding: 0;
 	}
 
 	@media (max-width: 600px) {
-		/* border-radius: 50px; */
 	}
 }
 
 .modal__title {
 	text-align: center;
-	font-size: 42px;
+	font-size: 52px;
 	margin-bottom: 30px;
 
 	@media (max-width: 1200px) {
@@ -137,8 +118,8 @@
 }
 
 .modal__paragraff {
-	font-size: 24px;
-	text-indent: 30px;
+	font-size: 32px;
+	text-indent: 42px;
 	margin-bottom: 30px;
 
 	@media (max-width: 1200px) {
@@ -168,7 +149,7 @@
 }
 
 .modal__list-item {
-	font-size: 24px;
+	font-size: 32px;
 	word-wrap: wrap;
 	position: relative;
 	margin-bottom: 10px;
@@ -188,7 +169,7 @@
 	left: -30px;
 	content: "* ";
 	font-family: "Pudelinka";
-	font-size: 42px;
+	font-size: 48px;
 	color: #7d7021;
 }
 
@@ -200,7 +181,7 @@
 .modal__close {
 	background: none;
 	border: none;
-	font-size: 26px;
+	font-size: 32px;
 	color: #28807e;
 	font-family: inherit;
 	margin-top: 20px;
@@ -236,7 +217,7 @@
 	background: url("./img/button.png") no-repeat center center;
 	background-size: cover;
 	cursor: pointer;
-	font-size: 36px;
+	font-size: 42px;
 	color: #28807e;
 	font-family: inherit;
 	width: 100%;

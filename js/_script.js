@@ -22,6 +22,27 @@ const modals = (trigger, modal, close) => {
     })
 }
 
+document.addEventListener("scroll", function (e) {
+    console.log(window.scrollY);
+    const headerSection = document.querySelector(".header-section")
+    if (window.screen.width > 1200) {
+        if (window.scrollY > 100) {
+            headerSection.classList.add("header__scroll");
+        } else {
+            headerSection.classList.remove("header__scroll");
+        }   
+    } else {
+        if (window.scrollY > 100) {
+            headerSection.style.background = "#dbeeef";
+            headerSection.style.paddingBottom = "5px";
+            headerSection.style.paddingTop = "5px";
+        } else {
+            headerSection.style.background = "transparent";
+        }
+    }
+    
+});
+
 const modalbtn1 = document.querySelector(".info__item1")
 const modal1 = document.querySelector(".modal1")
 const close1 = modal1.querySelector(".modal__close")
