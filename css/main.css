@@ -301,7 +301,6 @@
   align-items: center;
   position: relative;
   z-index: 110;
- 
 
   @media (max-width: 1100px) {
     margin-top: 100px;
@@ -326,13 +325,16 @@
 .shine__background {
   position: absolute;
   overflow: hidden;
-  width: 80%;
-  height: 932px;
+  width: 70%;
+  height: 1000px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("./img/shine.png") no-repeat center center;
+  background: url("./img/shine.png") no-repeat;
+  background-position: center center;
   animation: shine 5s infinite;
+  margin-top: 50px;
+  /* animation: rotate 20s infinite; */
 
   @media (max-width: 1100px) {
     /* margin-top: 100px; */
@@ -359,10 +361,22 @@
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.4);
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
@@ -376,7 +390,7 @@
   align-items: center;
   position: relative;
   animation: sun 5s infinite;
-    @media (max-width: 1100px) {
+  @media (max-width: 1100px) {
     width: 400px;
     height: 400px;
     animation: none;
@@ -399,7 +413,7 @@
     transform: scale(1);
   }
   50% {
-    transform:  scale(1.2);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -408,7 +422,7 @@
 
 .groups-text {
   font-size: 60px;
-  color: #917070;
+  color: #746c1d;
   animation: text 5s infinite;
 
   @media (max-width: 500px) {
@@ -430,7 +444,7 @@
     transform: scale(1);
   }
   50% {
-    transform:  scale(0.8);
+    transform: scale(0.8);
   }
   100% {
     transform: scale(1);
@@ -473,10 +487,26 @@
 }
 
 .cloud1 {
-  width: 430px;
-  height: 250px;
-  top: 200px;
-  left: 290px;
+  background: url("./img/cloud_left.png") no-repeat;
+  width: 500px;
+  height: 300px;
+  top: 150px;
+  left: 20%;
+
+  .cloud-title {
+    margin-left: 60px;
+  }
+
+  .cloud-text {
+    margin-left: 60px;
+  }
+
+  @media (max-width: 1440px) {
+    left: 20%;
+    top: 200px;
+    width: 430px;
+    height: 250px;
+  }
 
   @media (max-width: 1100px) {
     width: 340px;
@@ -486,6 +516,14 @@
 
   @media (max-width: 800px) {
     left: 10%;
+    background: url("./img/cloud.png") no-repeat;
+    .cloud-title {
+      margin-left: 0px;
+    }
+
+    .cloud-text {
+      margin-left: 0px;
+    }
   }
 
   @media (max-width: 600px) {
@@ -501,8 +539,13 @@
 }
 
 .cloud1:hover {
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 340px;
+
+  @media (max-width: 1440px) {
+    width: 500px;
+    height: 300px;
+  }
 
   @media (max-width: 1100px) {
     width: 340px;
@@ -527,10 +570,18 @@
 }
 
 .cloud2 {
-  width: 530px;
-  height: 300px;
-  top: 260px;
-  right: 50px;
+  background: url("./img/cloud_right.png") no-repeat;
+  width: 560px;
+  height: 320px;
+  top: 200px;
+  right: 15%;
+
+  @media (max-width: 1440px) {
+    right: 5%;
+    top: 260px;
+    width: 530px;
+    height: 300px;
+  }
 
   @media (max-width: 1100px) {
     width: 340px;
@@ -540,6 +591,7 @@
 
   @media (max-width: 800px) {
     right: 0;
+    background: url("./img/cloud.png") no-repeat;
   }
 
   @media (max-width: 600px) {
@@ -553,11 +605,11 @@
     top: 220px;
     width: 220px;
     .cloud-title {
-      margin-left: 20px;
+      margin-left: 30px;
     }
 
     .cloud-text {
-      margin-left: 20px;
+      margin-left: 30px;
     }
   }
 
@@ -567,8 +619,13 @@
 }
 
 .cloud2:hover {
-  width: 560px;
-  height: 350px;
+  width: 600px;
+  height: 370px;
+
+  @media (max-width: 1440px) {
+    width: 560px;
+    height: 330px;
+  }
 
   @media (max-width: 1100px) {
     width: 340px;
@@ -605,10 +662,23 @@
 }
 
 .cloud3 {
+  background: url("./img/cloud_left.png") no-repeat;
   width: 530px;
   height: 300px;
   top: 400px;
-  left: 50px;
+  left: 15%;
+
+  .cloud-title {
+    margin-left: 60px;
+  }
+
+  .cloud-text {
+    margin-left: 60px;
+  }
+
+  @media (max-width: 1440px) {
+    left: 5%;
+  }
 
   @media (max-width: 1100px) {
     width: 340px;
@@ -618,6 +688,14 @@
 
   @media (max-width: 800px) {
     left: 0;
+    background: url("./img/cloud.png") no-repeat;
+    .cloud-title {
+      margin-left: 0px;
+    }
+
+    .cloud-text {
+      margin-left: 0px;
+    }
   }
 
   @media (max-width: 600px) {
@@ -660,12 +738,16 @@
   }
 }
 
-
 .cloud4 {
+  background: url("./img/cloud_right.png") no-repeat;
   width: 500px;
   height: 300px;
   top: 500px;
-  right: 270px;
+  right: 20%;
+
+  @media (max-width: 1440px) {
+    right: 10%;
+  }
 
   @media (max-width: 1100px) {
     width: 340px;
@@ -674,6 +756,7 @@
   }
   @media (max-width: 800px) {
     right: 5%;
+    background: url("./img/cloud.png") no-repeat;
   }
 
   @media (max-width: 600px) {
@@ -686,11 +769,11 @@
     top: 450px;
     width: 220px;
     .cloud-title {
-      margin-left: 20px;
+      margin-left: 30px;
     }
 
     .cloud-text {
-      margin-left: 20px;
+      margin-left: 30px;
     }
   }
 
@@ -735,10 +818,9 @@
   }
 }
 
-
 .cloud {
   position: absolute;
-  background: url("./img/cloud.png") no-repeat;
+  /* background: url("./img/cloud.png") no-repeat; */
   background-size: contain;
   background-position: center center;
   display: flex;
