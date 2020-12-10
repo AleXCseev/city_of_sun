@@ -46,7 +46,7 @@
 .modal__wrapper {
 	width: 70%;
 	padding-top: 500px;
-	padding-right: 50px;
+	padding-right: 150px;
 	padding-left: 0px;
 
 	@media (max-width: 1600px) {
@@ -179,7 +179,7 @@
 }
 
 .modal__close {
-	background: none;
+	background: #fdfcbd;
 	border: none;
 	font-size: 32px;
 	color: #28807e;
