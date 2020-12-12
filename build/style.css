@@ -2598,8 +2598,8 @@
 @media (max-width: 1024px) {
 
 .modal__wrapper {
-		width: 45%;
-		padding: 0px 30px 0px 30px;
+		width: 40%;
+		padding: 0px 35px 0px 35px;
 		height: 550px;
 		overflow: auto
 }
@@ -3022,7 +3022,17 @@
   font-size: 36px;
   height: 100%;
   text-decoration: none;
+  text-transform: none;
 }
+
+.header-paragraf a {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
 
 @media (max-width: 1024px) {
 

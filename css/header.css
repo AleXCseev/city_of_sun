@@ -140,6 +140,16 @@
   font-size: 36px;
   height: 100%;
   text-decoration: none;
+  text-transform: none;
+
+  a {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
 
   @media (max-width: 1024px) {
     font-size: 18px;
