@@ -4,7 +4,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(24, 114, 112, 0.5);
+	background-color: rgba(24, 114, 112, 0.6);
 	z-index: 100000;
 	transition: all 1s ease;
 	overflow: auto;
@@ -64,6 +64,13 @@
 		width: 40%;
 		padding: 0px 35px 0px 35px;
 		height: 550px;
+		overflow: auto;
+	}
+
+	@media (max-width: 768px) {
+		width: 70%;
+		padding: 0px 35px 0px 35px;
+		height: 750px;
 		overflow: auto;
 	}
 
@@ -208,7 +215,7 @@
 	}
 }
 
-.registration__button {
+.modal_registration__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -229,6 +236,7 @@
 		background-color: #fdfcbd;
 		height: 60px;
 		border-radius: 60px;
+		font-size: 32px;
 	}
 
 	@media (max-width: 500px) {

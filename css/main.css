@@ -306,7 +306,7 @@
 
   @media (max-width: 1100px) {
     margin-top: 100px;
-    background: url("./img/shine.png") no-repeat center center;
+    /* background: url("./img/shine.png") no-repeat center center; */
   }
 
   @media (max-width: 500px) {
@@ -329,36 +329,26 @@
 .shine__background {
   position: absolute;
   overflow: hidden;
-  width: 70%;
+  width: 60%;
   height: 800px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: url("./img/shine.png") no-repeat;
   background-position: center center;
-  background-size: 50%;
+  background-size: 70%;
   animation: shine 5s infinite;
-  margin-top: 50px;
-  /* animation: rotate 20s infinite; */
+  padding-top: 50px;
 
   @media (max-width: 1100px) {
     /* margin-top: 100px; */
-    display: none;
+    /* display: none; */
+    background-size: 100%;
   }
 
   @media (max-width: 500px) {
-    /* background: none; */
-    /* justify-content: center; */
-    /* height: 800px; */
-    /* margin: -130px 0; */
-    /* margin-bottom: -120px; */
-    /* overflow: visible; */
-    /* z-index: 0; */
+    width: 60%;
   }
-
-  /* @media (max-width: 414px) {
-    padding: 0 10px;
-  } */
 }
 
 @keyframes shine {
@@ -386,24 +376,29 @@
 }
 
 .sun {
-  width: 300px;
-  height: 300px;
-  background-color: #fdfcc6;
-  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+  background: url("./img/sun.png") no-repeat center center;
+  /* border-radius: 100%; */
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   animation: sun 5s infinite;
   @media (max-width: 1100px) {
-    width: 400px;
-    height: 400px;
-    animation: none;
+    width: 200px;
+    height: 200px;
+    /* animation: none; */
   }
 
   @media (max-width: 500px) {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+  }
+
+  @media (max-width: 320px) {
+
   }
 }
 
@@ -424,13 +419,14 @@
   color: #746c1d;
   animation: text 5s infinite;
 
-  @media (max-width: 500px) {
-    padding-bottom: 30px;
-    animation: none;
+  @media (max-width: 768px) {
+    /* padding-bottom: 30px; */
+    /* animation: none; */
+    font-size: 36px;
   }
 
   @media (max-width: 414px) {
-    font-size: 40px;
+    font-size: 26px;
   }
 
   @media (max-width: 320px) {
