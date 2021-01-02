@@ -55,6 +55,12 @@ const close2 = modal2.querySelector(".modal__close")
 
 modals(modalbtn2, modal2, close2)
 
+const modalbtn3 = document.querySelector(".info__item3")
+const modal3 = document.querySelector(".modal3")
+const close3 = modal3.querySelector(".modal__close")
+
+modals(modalbtn3, modal3, close3)
+
 const modalbtn4 = document.querySelector(".info__item4")
 const modal4 = document.querySelector(".modal4")
 const close4 = modal4.querySelector(".modal__close")

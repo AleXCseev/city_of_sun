@@ -2852,6 +2852,10 @@
 	display: none;
 }
 
+.modal__link {
+	text-decoration: none;
+	color: inherit;
+}
 .header {
   width: 100%;
   background: url("../img/background.jpeg");

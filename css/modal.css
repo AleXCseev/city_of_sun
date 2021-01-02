@@ -266,3 +266,8 @@
 .modal-close {
 	display: none;
 }
+
+.modal__link {
+	text-decoration: none;
+	color: inherit;
+}
