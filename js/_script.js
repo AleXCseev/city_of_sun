@@ -1,5 +1,12 @@
 require('../css/_style.css');
 
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gorodsolntsa.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+
 const modals = (trigger, modal, close) => {
 
     trigger.addEventListener("click", (e) => {
@@ -96,3 +103,4 @@ const modalComments = document.querySelector(".modal_comments")
 const closeComments = modalComments.querySelector(".modal__close")
 
 modals(modalBtnComments, modalComments, closeComments)
+

@@ -17,6 +17,10 @@
 		justify-content: center;
 		align-items: center;
 	}
+	@media (max-width: 360px) {
+		background: none;
+
+	}
 }
 
 .modal__background {
@@ -61,16 +65,9 @@
 	}
 
 	@media (max-width: 1024px) {
-		width: 40%;
+		width: 407px;
 		padding: 0px 35px 0px 35px;
 		height: 550px;
-		overflow: auto;
-	}
-
-	@media (max-width: 768px) {
-		width: 70%;
-		padding: 0px 35px 0px 35px;
-		height: 750px;
 		overflow: auto;
 	}
 
@@ -84,9 +81,14 @@
 	@media (max-width: 375px) {
 	}
 
-	@media (max-width: 320px) {
-		height: 320px;
-		padding: 0px 15px 0px 15px;
+	@media (max-width: 360px) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100vh;
+		padding: 15px 15px 30px 15px;
+		width: 100vw;
+		background-color: #dbeeef;
 	}
 }
 
@@ -253,10 +255,21 @@
 }
 
 .fb-plagin {
-	border: 1px solid #28807e;
-	border-radius: 20px;
+	/* border: 1px solid #28807e; */
+	/* border-radius: 20px; */
 	padding: 10px;
 	margin-bottom: 20px;
+
+	@media (max-width: 360px) {
+		padding: 0;
+		margin: 0;
+	}
+
+}
+
+#disqus_recommendations {
+	margin: 0 !important;
+	display: none !important;
 }
 
 .notmargin {
