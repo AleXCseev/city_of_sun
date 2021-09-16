@@ -2860,6 +2860,10 @@
 	display: none !important;
 }
 
+#disqus_thread iframe[sandbox] {
+	display: none !important;
+}
+
 .notmargin {
 	margin-bottom: 0px;
 }
