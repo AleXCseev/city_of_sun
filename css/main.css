@@ -1076,15 +1076,18 @@
   text-align: center;
   height: 200px;
   width: 1200px;
+  padding: 0 200px;
   font-family: inherit;
-  font-size: 60px;
+  font-size: 70px;
   cursor: pointer;
   background: url("./img/button.png") no-repeat center center;
   background-size: cover;
 
   @media (max-width: 1024px) {
-    width: 70%;
+    width: 90%;
     margin-top: -60px;
+    padding: 0 100px 0 70px;
+   
   }
 
   @media (max-width: 900px) {
@@ -1094,15 +1097,44 @@
   @media (max-width: 414px) {
     width: 100%;
     height: 140px;
-    font-size: 34px;
+    font-size: 8vw;
     margin-top: 0;
   }
 
+  @media (max-width: 375px) {
+    font-size: 7vw;
+  }
+
   @media (max-width: 320px) {
-    font-size: 30px;
+    padding: 0 30px;
     width: 100%;
     height: 120px;
     background-size: cover;
+  }
+}
+
+
+
+.info__registration-text {
+  font-size: 32px;
+
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 540px) {
+    font-size: 20px;
+    height: auto;
+    background-image: none;
+    background-color: #faf5d1;
+    border-radius: 100px;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 414px) {
+    font-size: 18px;
+    padding: 20px 30px;
   }
 }
 
