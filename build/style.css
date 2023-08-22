@@ -5152,6 +5152,11 @@
   height: 350px;
 }
 
+.info__map iframe {
+    width: 100%;
+    height: 100%;
+  }
+
 @media (max-width: 900px) {
 
 .info__map {
