@@ -398,7 +398,6 @@
   }
 
   @media (max-width: 320px) {
-
   }
 }
 
@@ -1087,7 +1086,6 @@
     width: 90%;
     margin-top: -60px;
     padding: 0 100px 0 70px;
-   
   }
 
   @media (max-width: 900px) {
@@ -1112,8 +1110,6 @@
     background-size: cover;
   }
 }
-
-
 
 .info__registration-text {
   font-size: 32px;
@@ -1224,5 +1220,26 @@
   @media (max-width: 414px) {
     font-size: 22px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .info__registration-button {
+    width: 90%;
+    margin-top: -60px;
+    font-size: 6vw;
+    padding: 0 10vw;
+  }
+  .main-text {
+    font-size: 10vw;
+    margin-top: -50px;
+  }
+  .info__title {
+    font-size: 6.5vw;
+    text-align: left;
+    padding-left: 2.5vw;
+  }
+  .info__registration-button-2 {
+    margin-top: 20px;
   }
 }

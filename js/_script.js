@@ -15,12 +15,13 @@ const modals = (trigger, modal, close) => {
         }
         modal.classList.add("animated", "fadeIn");
         modal.classList.remove("modal-close");
-        
+        $("body").css("overflow", "hidden")
     })
 
     close.addEventListener("click", () => {
         modal.classList.remove("fadeIn");
         modal.classList.add("fadeOut");
+        $("body").css("overflow", "auto")
 
         setTimeout(() => {
             modal.classList.add("modal-close");
